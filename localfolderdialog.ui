@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LocalfolderDialog</class>
+ <widget class="QDialog" name="LocalfolderDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>666</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;</string>
+      </property>
+      <widget class="QWidget" name="head" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>666</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pushButton_close">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>10</y>
+          <width>45</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(:/res/btn_closeMainWindow_50.png);
+    border: none;
+    background-color: transparent;
+}
+
+QPushButton:hover, 
+QPushButton:pressed {
+    background-image: url(:/res/btn_closeMainWindow_100.png);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>30</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei</family>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #283248;</string>
+        </property>
+        <property name="text">
+         <string>选择本地文件夹</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>100</y>
+          <width>431</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei</family>
+          <pointsize>11</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #283248;</string>
+        </property>
+        <property name="text">
+         <string>将自动扫描勾选的目录，文件增删实时同步。</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_selectFolder">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>620</y>
+         <width>260</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>13</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color: #3B4357;
+	background-color: #EAEDF1;
+	border-radius: 30px;
+}
+QPushButton:hover {
+    background-color: #E2E5E9;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>添加文件夹</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_accept">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>620</y>
+         <width>260</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>13</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	background-color: #FC3B59;
+	border-radius: 30px;
+}
+QPushButton:hover{
+	background-color: #E33742;
+}</string>
+       </property>
+       <property name="text">
+        <string>确认</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="body" native="true">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>160</y>
+         <width>546</width>
+         <height>441</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>546</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>546</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+	background-color: #ffffff;
+}
+
+QScrollArea {
+    border: none; /* 去除边框 */
+    background-color: #ffffff;
+}
+
+QScrollArea::corner {
+    background-color: #ffffff;
+}
+
+QScrollBar:vertical {
+    background-color: #f0f3f6; /* 滚动条背景 */
+    width: 9px; /* 滚动条宽度 */
+    margin: 0px 0px 0px 0px; /* 控制滚动条的间距 */
+    border-radius: 4px;
+}
+
+
+
+QScrollBar::handle:vertical {
+    background-color: #dcdfe4; /* 滚动条滑块颜色 */
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #bec3ca; /* 滚动条滑块悬停时颜色 */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background-color: #f0f3f6; /* 隐藏滚动条上下箭头 */
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="container">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>546</width>
+             <height>441</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#container {
+	margin: 35px 0px 0px 0px;
+	alignment: top;
+}</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

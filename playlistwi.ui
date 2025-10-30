@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>playlistwi</class>
+ <widget class="QDialog" name="playlistwi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>575</width>
+    <height>878</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>575</width>
+    <height>878</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>575</width>
+    <height>878</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border: none; /* 去除边框 */</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">QScrollArea {
+
+    background-color: #f7f9fc;
+}
+
+QScrollArea::corner {
+    background-color: #f0f3f6;
+}
+
+QScrollBar:vertical {
+    background-color: #f0f3f6; /* 滚动条背景 */
+    width: 9px; /* 滚动条宽度 */
+    margin: 0px 0px 0px 0px; /* 控制滚动条的间距 */
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #dcdfe4; /* 滚动条滑块颜色 */
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #bec3ca; /* 滚动条滑块悬停时颜色 */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background-color: #f0f3f6; /* 隐藏滚动条上下箭头 */
+}
+QScrollBar:horizontal {
+    height: 0px; /* 关键：将高度设为 0，使水平滚动条不可见且不占空间 */
+    background-color: transparent; /* 可选：背景透明 */
+}
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>565</width>
+        <height>858</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #fafafa;
+/* 左上角圆角 12px */
+border-top-left-radius: 12px;
+/* 上边框：1px 实线，颜色比如 #cccccc */
+border-top: 1px solid #cccccc;
+
+/* 左边框：1px 实线，颜色比如 #cccccc */
+border-left: 1px solid #cccccc;
+
+</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>55</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #283248;
+        font-size: 25px;
+ border: none; /* 去除边框 */
+        font-family: &quot;Microsoft YaHei&quot;;
+        font-weight: normal;
+        background-color: transparent;
+font-weight: bold;        
+border-top:none;         </string>
+            </property>
+            <property name="text">
+             <string>播放列表</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>240</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clear_btn">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(:/res/viewswitch/listclear.png);
+    border: none;
+    background-color: transparent;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="container_wi" native="true">
+         <property name="styleSheet">
+          <string notr="true">#container_wi{
+background-color: #fafafa;
+background-color: #fafafa;
+border-bottom-left-radius: 12px; 
+/* 左边框：1px 实线，颜色比如 #cccccc */
+border-left: 1px solid #cccccc;
+/* 下边框：1px 实线，颜色比如 #cccccc */
+border-bottom: 1px solid #cccccc;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
